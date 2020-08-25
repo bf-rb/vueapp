@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/bit-forge-org/vueapp'
   spec.license = 'MIT'
 
-  spec.files = %w[lib/**/*.rb bin/* lib/vueapp/templates/**/*]
+  spec.files = `git ls-files bin lib LICENSE.txt README.md`.split($RS)
   spec.executables = ['vueapp']
   spec.require_paths = ['lib']
 
