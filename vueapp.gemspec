@@ -15,29 +15,22 @@ Gem::Specification.new do |spec|
   spec.summary = 'Tools for vue.js applications'
   spec.description =
     'Tools for creating and developing vue.js applications easily'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage = 'https://github.com/bit-forge-org/vueapp'
   spec.license = 'MIT'
 
-  # Specify which files should be added to the gem when it is released.
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  # spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-  #   `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  # end
-
-  spec.files = %w[lib/**/*.rb bin/*]
-  # spec.bindir        = 'exe'
+  spec.files = %w[lib/**/*.rb bin/* lib/vueapp/templates/**/*]
   spec.executables = ['vueapp']
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rake', '>= 12.3.3'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '>= 0.75.0'
 
-  spec.add_dependency 'bundler', '~> 2.0'
+  spec.add_dependency 'bundler', '~> 2.1.4'
   spec.add_dependency 'concolor', '0.0.1'
-  spec.add_dependency 'listen', '~> 3.2'
-  spec.add_dependency 'sassc'
-  spec.add_dependency 'slim', '~> 4.0', '>= 4.0.1'
-  spec.add_dependency 'thor', '~> 0.20.3'
+  spec.add_dependency 'listen', '~> 3.2.1'
+  spec.add_dependency 'sassc', '~> 2.2.1'
+  spec.add_dependency 'slim', '~> 4.0.1'
+  spec.add_dependency 'thor', '~> 1.0.1'
   spec.add_dependency 'uglifier', '~> 4.2.0'
 end
